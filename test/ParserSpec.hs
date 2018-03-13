@@ -11,7 +11,7 @@ module ParserSpec where
         context "true" $ 
             it "should be \"Tru\"" $ 
               parseExpr "true" `shouldBe` 
-              Right (Tru)
+              Right Tru
 
         context "(\\ x : Nat->Nat . x z) (\\ y : Nat . y)" $ 
           it "should be \"App (Lambda (Arr Nat Nat) (App (Var 0 (Arr Nat Nat) x) (Var 1 TUnit z)) [x]) (Lambda Nat (Var 0 Nat y) [y])\"" $ 

@@ -81,8 +81,6 @@ module TypeChecker (
                                 Arr paramTy retTy | argTy `isSubtype` paramTy -> Right retTy
                                                   | otherwise                 -> Left $ Mismatch argTy paramTy
                                 _                                             -> Left $ NotFunction t1
-
-      _                   -> Left IllTyped                                 -- "Ill-typed"
          
     
         

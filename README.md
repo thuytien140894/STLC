@@ -1,4 +1,4 @@
-# Simply Typed Lambda Calculus
+# Simply Typed Lambda Calculus (with Subtyping)
 
 This program implemented an interpreter for the simply typed lambda calculus using 
 the formal definitions and the OCaml implementation described in the textbook, 
